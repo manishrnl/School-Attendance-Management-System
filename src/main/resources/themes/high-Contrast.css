@@ -1,0 +1,329 @@
+/* High Contrast Theme */
+/* High Contrast Theme */
+/* A high contrast theme with black background and white text for better readability */
+
+.root {
+    -fx-background-color: #000000;  /* Pure black background */
+    -fx-text-fill: #ffffff;         /* Pure white text */
+}
+
+.anchor-pane {
+    -fx-background-color: #000000;  /* Pure black background */
+}
+
+/* Text styling */
+Label, .label, Text, .text {
+    -fx-text-fill: #ffffff;         /* Pure white text */
+    -fx-fill: #ffffff;              /* For Text nodes */
+}
+
+.general-text {
+    -fx-fill: #ffffff;              /* Pure white text */
+    -fx-font-weight: bold;          /* Bold text for better visibility */
+}
+
+.button, .Small-Button {
+    -fx-background-color: #ffffff;  /* White background */
+    -fx-text-fill: #000000;         /* Black text */
+    -fx-font-weight: bold;          /* Bold text for better readability */
+    -fx-border-color: #ffffff;      /* White border */
+    -fx-border-width: 2px;          /* Thicker border for visibility */
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+}
+
+.button:hover, .Small-Button:hover {
+    -fx-background-color: #000000;  /* Black background */
+    -fx-text-fill: #ffffff;         /* White text */
+    -fx-cursor: hand;
+    -fx-border-color: #ffffff;      /* White border */
+    -fx-border-width: 2px;          /* Thicker border for visibility */
+}
+
+.combo-box, .menu-button {
+    -fx-background-color: #000000;  /* Black background */
+    -fx-text-fill: #ffffff;         /* White text */
+    -fx-border-color: #ffffff;      /* White border */
+    -fx-border-width: 2px;          /* Thicker border for visibility */
+    -fx-border-radius: 5px;
+}
+
+.combo-box .arrow, .menu-button .arrow {
+    -fx-background-color: #ffffff;  /* White arrow */
+}
+
+.combo-box .list-cell, .menu-button .label {
+    -fx-text-fill: #ffffff;         /* White text */
+}
+
+.context-menu {
+    -fx-background-color: #000000;  /* Black background */
+    -fx-border-color: #ffffff;      /* White border */
+    -fx-border-width: 2px;          /* Thicker border for visibility */
+}
+
+.menu-item {
+    -fx-background-color: #000000;  /* Black background */
+}
+
+.menu-item .label {
+    -fx-text-fill: #ffffff;         /* White text */
+}
+
+.menu-item:focused {
+    -fx-background-color: #ffffff;  /* White background */
+}
+
+.menu-item:focused .label {
+    -fx-text-fill: #000000;         /* Black text */
+}
+
+.table-view {
+    -fx-background-color: #000000;  /* Black background */
+    -fx-border-color: #ffffff;      /* White border */
+    -fx-border-width: 2px;          /* Thicker border for visibility */
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #ffffff;  /* White background */
+}
+
+.table-view .column-header, .table-view .filler {
+    -fx-background-color: #000000;  /* Black background */
+    -fx-text-fill: #ffffff;         /* White text */
+    -fx-border-color: #ffffff;      /* White border */
+    -fx-border-width: 1px;          /* Visible border */
+}
+
+.table-view .table-cell {
+    -fx-text-fill: #ffffff;         /* White text */
+    -fx-border-color: #ffffff;      /* White border */
+    -fx-border-width: 1px;          /* Visible border */
+}
+
+.table-row-cell {
+    -fx-background-color: #000000;  /* Black background */
+    -fx-text-fill: #ffffff;         /* White text */
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #000000;  /* Black background */
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #ffffff;  /* White background */
+    -fx-text-fill: #000000;         /* Black text */
+}
+
+.table-row-cell:selected .table-cell {
+    -fx-text-fill: #000000;         /* Black text */
+}
+
+.text-field, .text-area {
+    -fx-background-color: #000000;  /* Black background */
+    -fx-text-fill: #ffffff;         /* White text */
+    -fx-border-color: #ffffff;      /* White border */
+    -fx-border-width: 2px;          /* Thicker border for visibility */
+    -fx-border-radius: 5px;
+}
+
+.scroll-bar {
+    -fx-background-color: #000000;  /* Black background */
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: #ffffff;  /* White thumb */
+}
+
+.scroll-bar .increment-button, .scroll-bar .decrement-button {
+    -fx-background-color: #000000;  /* Black background */
+    -fx-border-color: #ffffff;      /* White border */
+}
+
+.scroll-bar .increment-arrow, .scroll-bar .decrement-arrow {
+    -fx-background-color: #ffffff;  /* White arrow */
+}
+
+/* TabPane styling */
+.tab-pane {
+  -fx-background-color: #000000;    /* Black background */
+  -fx-tab-min-width: 120px;
+  -fx-tab-max-width: 120px;
+}
+
+.tab-pane .tab-header-background {
+  -fx-background-color: #000000;    /* Black background */
+}
+
+/* Inactive tabs */
+.tab {
+  -fx-background-color: #000000;    /* Black background */
+  -fx-background-insets: 0 1 0 1, 0, 0;
+  -fx-padding: 5 15 5 15;
+  -fx-border-color: #ffffff;        /* White border */
+  -fx-border-width: 1px;            /* Visible border */
+}
+
+.tab .tab-label {
+  -fx-text-fill: #ffffff;           /* White text */
+  -fx-font-weight: bold;            /* Bold text for better visibility */
+}
+
+/* Active (selected) tab */
+.tab:selected {
+  -fx-background-color: #ffffff;    /* White background */
+  -fx-focus-color: transparent;
+  -fx-faint-focus-color: transparent;
+}
+
+.tab:selected .tab-label {
+  -fx-text-fill: #000000;           /* Black text */
+}
+
+/* Hover effect */
+.tab:hover {
+  -fx-background-color: #555555;    /* Dark gray background */
+}
+
+/* Close button */
+.tab .tab-close-button {
+  -fx-background-color: #ffffff;    /* White background */
+}
+
+.tab .tab-close-button:hover {
+  -fx-background-color: #ff0000;    /* Red for hover */
+}
+
+/* Content area */
+.tab-content {
+  -fx-background-color: #000000;    /* Black background */
+  -fx-padding: 15;
+  -fx-text-fill: #ffffff;           /* White text */
+}
+.root {
+    -fx-background-color: #000000;
+    -fx-text-fill: #ffffff;
+}
+
+.anchor-pane {
+    -fx-background-color: #000000;
+}
+
+.button, .Small-Button {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #000000;
+    -fx-font-weight: bold;
+    -fx-border-color: #ffffff;
+    -fx-border-width: 2px;
+}
+
+.button:hover, .Small-Button:hover {
+    -fx-background-color: #000000;
+    -fx-text-fill: #ffffff;
+    -fx-cursor: hand;
+}
+
+.combo-box, .menu-button {
+    -fx-background-color: #000000;
+    -fx-text-fill: #ffffff;
+    -fx-border-color: #ffffff;
+    -fx-border-width: 2px;
+}
+
+.combo-box .arrow, .menu-button .arrow {
+    -fx-background-color: #ffffff;
+}
+
+.combo-box .list-cell, .menu-button .label {
+    -fx-background-color: #000000;
+    -fx-text-fill: #ffffff;
+}
+
+.context-menu {
+    -fx-background-color: #000000;
+    -fx-border-color: #ffffff;
+    -fx-border-width: 2px;
+}
+
+.menu-item {
+    -fx-background-color: #000000;
+}
+
+.menu-item .label {
+    -fx-text-fill: #ffffff;
+}
+
+.menu-item:focused {
+    -fx-background-color: #ffffff;
+}
+
+.menu-item:focused .label {
+    -fx-text-fill: #000000;
+}
+
+.table-view {
+    -fx-background-color: #000000;
+    -fx-border-color: #ffffff;
+    -fx-border-width: 2px;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #ffffff;
+}
+
+.table-view .column-header, .table-view .filler {
+    -fx-background-color: #000000;
+    -fx-text-fill: #ffffff;
+    -fx-border-color: #ffffff;
+    -fx-border-width: 1px;
+}
+
+.table-view .table-cell {
+    -fx-background-color: #000000;
+    -fx-text-fill: #ffffff;
+    -fx-border-color: #ffffff;
+    -fx-border-width: 1px;
+}
+
+.table-row-cell {
+    -fx-background-color: #000000;
+    -fx-text-fill: #ffffff;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #000000;
+}
+
+.table-row-cell:selected .table-cell {
+    -fx-text-fill: #000000;
+}
+
+.text-field, .text-area {
+    -fx-background-color: #000000;
+    -fx-text-fill: #ffffff;
+    -fx-border-color: #ffffff;
+    -fx-border-width: 2px;
+}
+
+.general-text {
+    -fx-fill: #ffffff;
+    -fx-font-weight: bold;
+}
+
+.scroll-bar {
+    -fx-background-color: #000000;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: #ffffff;
+}
+
+.scroll-bar .increment-button, .scroll-bar .decrement-button {
+    -fx-background-color: #000000;
+    -fx-border-color: #ffffff;
+}
+
+.scroll-bar .increment-arrow, .scroll-bar .decrement-arrow {
+    -fx-background-color: #ffffff;
+}

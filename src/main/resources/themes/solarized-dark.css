@@ -1,0 +1,186 @@
+/* Solarized Dark Theme */
+/* Based on the Solarized color palette by Ethan Schoonover */
+
+.root {
+    -fx-background-color: #002b36;  /* base03 */
+    -fx-text-fill: #839496;         /* base0 */
+}
+
+.anchor-pane {
+    -fx-background-color: #002b36;  /* base03 */
+}
+
+.forget-password {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: RED;
+}
+.general-label {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+.general-text {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-fill: white;
+}
+.headerText {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1e90ff;
+}
+
+.button, .Small-Button {
+    -fx-background-color: #268bd2;  /* blue */
+    -fx-text-fill: #fdf6e3;         /* base3 */
+    -fx-font-weight: bold;
+    -fx-background-radius: 5px;
+}
+
+.button:hover, .Small-Button:hover {
+    -fx-background-color: #2aa198;  /* cyan */
+    -fx-cursor: hand;
+}
+
+.combo-box, .menu-button {
+    -fx-background-color: #073642;  /* base02 */
+    -fx-text-fill: #839496;         /* base0 */
+    -fx-border-color: #586e75;      /* base01 */
+    -fx-border-radius: 5px;
+}
+
+.combo-box .arrow, .menu-button .arrow {
+    -fx-background-color: #268bd2;  /* blue */
+}
+
+.combo-box .list-cell, .menu-button .label {
+    -fx-text-fill: #839496;         /* base0 */
+}
+
+.context-menu {
+    -fx-background-color: #073642;  /* base02 */
+    -fx-border-color: #586e75;      /* base01 */
+}
+
+.menu-item {
+    -fx-background-color: #073642;  /* base02 */
+}
+
+.menu-item .label {
+    -fx-text-fill: #839496;         /* base0 */
+}
+
+.menu-item:focused {
+    -fx-background-color: #268bd2;  /* blue */
+}
+
+.menu-item:focused .label {
+    -fx-text-fill: #fdf6e3;         /* base3 */
+}
+
+.table-view {
+    -fx-background-color: #073642;  /* base02 */
+    -fx-border-color: #586e75;      /* base01 */
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #002b36;  /* base03 */
+}
+
+.table-view .column-header, .table-view .filler {
+    -fx-background-color: transparent;
+    -fx-border-color: #586e75;      /* base01 */
+    -fx-border-width: 0 0 1 0;
+    -fx-text-fill: #839496;         /* base0 */
+}
+
+.table-view .table-cell {
+    -fx-text-fill: #839496;         /* base0 */
+}
+
+.table-row-cell {
+    -fx-background-color: #002b36;  /* base03 */
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #073642;  /* base02 */
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #586e75;  /* base01 */
+}
+
+.text-field, .text-area {
+    -fx-background-color: #073642;  /* base02 */
+    -fx-text-fill: #839496;         /* base0 */
+    -fx-border-color: #586e75;      /* base01 */
+    -fx-border-radius: 5px;
+}
+
+.scroll-bar {
+    -fx-background-color: #002b36;  /* base03 */
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: #586e75;  /* base01 */
+}
+
+.scroll-bar .thumb:hover {
+    -fx-background-color: #268bd2;  /* blue */
+}
+
+/* TabPane styling */
+.tab-pane {
+  -fx-background-color: #002b36;    /* base03 */
+  -fx-tab-min-width: 120px;
+  -fx-tab-max-width: 120px;
+}
+
+.tab-pane .tab-header-background {
+  -fx-background-color: #002b36;    /* base03 */
+}
+
+/* Inactive tabs */
+.tab {
+  -fx-background-color: #073642;    /* base02 */
+  -fx-background-insets: 0 1 0 1, 0, 0;
+  -fx-padding: 5 15 5 15;
+}
+
+.tab .tab-label {
+  -fx-text-fill: #839496;           /* base0 */
+  -fx-font-weight: bold;
+}
+
+/* Active (selected) tab */
+.tab:selected {
+  -fx-background-color: #268bd2;    /* blue */
+  -fx-focus-color: transparent;
+  -fx-faint-focus-color: transparent;
+}
+
+.tab:selected .tab-label {
+  -fx-text-fill: #fdf6e3;           /* base3 */
+}
+
+/* Hover effect */
+.tab:hover {
+  -fx-background-color: #2aa198;    /* cyan */
+}
+
+/* Close button */
+.tab .tab-close-button {
+  -fx-background-color: #839496;    /* base0 */
+}
+
+.tab .tab-close-button:hover {
+  -fx-background-color: #dc322f;    /* red */
+}
+
+/* Content area */
+.tab-content {
+  -fx-background-color: #002b36;    /* base03 */
+  -fx-padding: 15;
+  -fx-text-fill: #839496;           /* base0 */
+}

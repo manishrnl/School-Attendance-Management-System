@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="rootPane" prefHeight="490.0" prefWidth="716.0" styleClass="anchor-pane" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.studentattendanceandmanagementsystem.File_Menu_Controller.ThemeSettingsController">
+    <children>
+        <Text layoutX="64.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="general-text" text="Theme" />
+        <MenuButton fx:id="themeMenu" alignment="CENTER" contentDisplay="CENTER" layoutX="175.0" layoutY="79.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="244.0" styleClass="combo-box" text="Light">
+            <items>
+                <MenuItem fx:id="darkTheme" text="Dark" />
+                <MenuItem fx:id="lightTheme" text="Light" />
+                <MenuItem fx:id="aquaTheme" text="Aqua" />
+                <MenuItem fx:id="blueTheme" text="Blue" />
+                <MenuItem fx:id="greenTheme" text="Green" />
+                <MenuItem fx:id="monokaiTheme" text="Monokai" />
+                <MenuItem fx:id="solarizedDarkTheme" text="Solarized Dark" />
+                <MenuItem fx:id="solarizedLightTheme" text="Solarized Light" />
+                <MenuItem fx:id="draculaTheme" text="Dracula" />
+                <MenuItem fx:id="highContrastTheme" text="High Contrast" />
+            </items>
+        </MenuButton>
+
+        <Text layoutX="64.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="general-text" text="Font Style" />
+        <MenuButton fx:id="fontMenu" alignment="CENTER" contentDisplay="CENTER" layoutX="175.0" layoutY="149.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="244.0" styleClass="combo-box" text="Arial">
+            <items>
+                <MenuItem fx:id="arialFont" text="Arial" />
+                <MenuItem fx:id="calibriFont" text="Calibri" />
+                <MenuItem fx:id="poppinsFont" text="Poppins" />
+                <MenuItem fx:id="centuryFont" text="Century" />
+                <MenuItem fx:id="verdanaFont" text="Verdana" />
+                <MenuItem fx:id="consolasFont" text="Consolas" />
+                <MenuItem fx:id="segoeFont" text="Segoe UI" />
+                <MenuItem fx:id="timesNewRomanFont" text="Times New Roman" />
+                <MenuItem fx:id="lucidaConsoleFont" text="Lucida Console" />
+                <MenuItem fx:id="robotoFont" text="Roboto" />
+                <MenuItem fx:id="jetbrainsMonoFont" text="JetBrains Mono" />
+            </items>
+        </MenuButton>
+
+        <Text layoutX="64.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="general-text" text="Font Size" />
+        <MenuButton fx:id="fontSizeMenu" alignment="CENTER" contentDisplay="CENTER" layoutX="175.0" layoutY="215.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="244.0" styleClass="combo-box" text="13">
+            <items>
+                <MenuItem fx:id="weight8" text="8" />
+                <MenuItem fx:id="weight9" text="9" />
+                <MenuItem fx:id="weight10" text="10" />
+                <MenuItem fx:id="weight11" text="11" />
+                <MenuItem fx:id="weight12" text="12" />
+                <MenuItem fx:id="weight13" text="13" />
+                <MenuItem fx:id="weight14" text="14" />
+                <MenuItem fx:id="weight15" text="15" />
+                <MenuItem fx:id="weight16" text="16" />
+                <MenuItem fx:id="weight17" text="17" />
+                <MenuItem fx:id="weight18" text="18" />
+                <MenuItem fx:id="weight20" text="20" />
+                <MenuItem fx:id="weight22" text="22" />
+                <MenuItem fx:id="weight24" text="24" />
+                <MenuItem fx:id="weight28" text="28" />
+                <MenuItem fx:id="weight32" text="32" />
+            </items>
+        </MenuButton>
+
+        <Button layoutX="428.0" layoutY="410.0" mnemonicParsing="false" onAction="#applyChanges" prefHeight="42.0" prefWidth="82.0" styleClass="Small-Button" text="Apply" />
+        <Button layoutX="242.0" layoutY="410.0" mnemonicParsing="false" onAction="#cancelChanges" prefHeight="42.0" prefWidth="107.0" styleClass="Small-Button" text="Cancel" />
+    </children>
+</AnchorPane>

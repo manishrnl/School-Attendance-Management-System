@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="765.0" prefWidth="1377.0" styleClass="anchor-pane" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.studentattendanceandmanagementsystem.File_Menu_Controller.AddStaffController">
+
+    <children>
+        <Label layoutX="649.0" layoutY="92.0" styleClass="headerText" text="Add Staff Member" />
+
+        <Label layoutX="468.0" layoutY="192.0" styleClass="general-label" text="First Name:" />
+        <TextField fx:id="firstNameField" layoutX="618.0" layoutY="187.0" prefHeight="50.0" prefWidth="360.0" styleClass="text-area" />
+
+        <Label layoutX="468.0" layoutY="250.0" styleClass="general-label" text="Last Name:" />
+        <TextField fx:id="lastNameField" layoutX="618.0" layoutY="245.0" prefHeight="50.0" prefWidth="360.0" styleClass="text-area" />
+
+        <Label layoutX="468.0" layoutY="316.0" styleClass="general-label" text="Department:" />
+
+        <Label layoutX="465.0" layoutY="370.0" styleClass="general-label" text="Position:" />
+
+        <Label layoutX="468.0" layoutY="425.0" styleClass="general-label" text="Hire Date:" />
+        <DatePicker fx:id="hireDatePicker" layoutX="618.0" layoutY="420.0" prefHeight="42.0" prefWidth="360.0" />
+
+        <Button fx:id="saveButton" layoutX="784.0" layoutY="514.0" onAction="#handleSave" prefHeight="42.0" prefWidth="121.0" text="Save" />
+        <Button fx:id="clearButton" layoutX="616.0" layoutY="514.0" onAction="#handleClear" prefHeight="42.0" prefWidth="113.0" text="Clear" />
+
+        <ComboBox fx:id="positionComboBox" layoutX="618.0" layoutY="359.0" prefHeight="42.0" prefWidth="360.0">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="Clerk" />
+                    <String fx:value="Librarian" />
+                    <String fx:value="Manager" />
+                    <String fx:value="Accountant" />
+                    <String fx:value="Assistant Librarian" />
+                    <String fx:value="Payroll Manager" />
+                    <String fx:value="Account Supervisor" />
+                    <String fx:value="Office Manager" />
+                    <String fx:value="Library Supervisor" />
+                    <String fx:value="Assistant Accountant" />
+                    <String fx:value="Secretary" />
+                    <String fx:value="Library Assistant" />
+                    <String fx:value="Financial Analyst" />
+                    <String fx:value="Receptionist" />
+                    <String fx:value="Financial Consultant" />
+                    <String fx:value="Administrator" />
+                    <String fx:value="Head Librarian" />
+                    <String fx:value="Accounting Assistant" />
+                    <String fx:value="HR Manager" />
+                    <String fx:value="Auditor" />
+                    <String fx:value="Tax Consultant" />
+                    <String fx:value="Tax Analyst" />
+                    <String fx:value="Finance Manager" />
+                    <String fx:value="HR Specialist" />
+                    <String fx:value="Accounts Manager" />
+                </FXCollections>
+            </items>
+        </ComboBox>
+        <ComboBox fx:id="departmentComboBox" layoutX="618.0" layoutY="305.0" prefHeight="20.0" prefWidth="360.0">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="Admin" />
+                    <String fx:value="Library" />
+                    <String fx:value="Accounts" />
+                </FXCollections>
+            </items>
+        </ComboBox>
+      <Label fx:id="errorLabel" layoutX="421.0" layoutY="488.0" prefHeight="18.0" prefWidth="587.0" styleClass="general-label" />
+    </children>
+</AnchorPane>

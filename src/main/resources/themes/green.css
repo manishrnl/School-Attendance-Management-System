@@ -1,0 +1,185 @@
+/* Green Theme */
+/* A fresh green-based color palette */
+
+.root {
+    -fx-background-color: #e8f5e9;  /* Light green background */
+    -fx-text-fill: #1b5e20;         /* Dark green text */
+}
+
+.anchor-pane {
+    -fx-background-color: #e8f5e9;  /* Light green background */
+}
+
+.forget-password {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: RED;
+}
+.general-label {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+.general-text {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-fill: white;
+}
+.headerText {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1e90ff;
+}
+.button, .Small-Button {
+    -fx-background-color: #4caf50;  /* Medium green */
+    -fx-text-fill: #ffffff;         /* White text */
+    -fx-font-weight: bold;
+    -fx-background-radius: 5px;
+}
+
+.button:hover, .Small-Button:hover {
+    -fx-background-color: #388e3c;  /* Darker green for hover */
+    -fx-cursor: hand;
+}
+
+.combo-box, .menu-button {
+    -fx-background-color: #c8e6c9;  /* Lighter green */
+    -fx-text-fill: #1b5e20;         /* Dark green text */
+    -fx-border-color: #81c784;      /* Medium-light green border */
+    -fx-border-radius: 5px;
+}
+
+.combo-box .arrow, .menu-button .arrow {
+    -fx-background-color: #4caf50;  /* Medium green */
+}
+
+.combo-box .list-cell, .menu-button .label {
+    -fx-text-fill: #1b5e20;         /* Dark green text */
+}
+
+.context-menu {
+    -fx-background-color: #c8e6c9;  /* Lighter green */
+    -fx-border-color: #81c784;      /* Medium-light green border */
+}
+
+.menu-item {
+    -fx-background-color: #c8e6c9;  /* Lighter green */
+}
+
+.menu-item .label {
+    -fx-text-fill: #1b5e20;         /* Dark green text */
+}
+
+.menu-item:focused {
+    -fx-background-color: #4caf50;  /* Medium green */
+}
+
+.menu-item:focused .label {
+    -fx-text-fill: #ffffff;         /* White text */
+}
+
+.table-view {
+    -fx-background-color: #c8e6c9;  /* Lighter green */
+    -fx-border-color: #81c784;      /* Medium-light green border */
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #a5d6a7;  /* Medium-light green */
+}
+
+.table-view .column-header, .table-view .filler {
+    -fx-background-color: transparent;
+    -fx-border-color: #81c784;      /* Medium-light green border */
+    -fx-border-width: 0 0 1 0;
+    -fx-text-fill: #1b5e20;         /* Dark green text */
+}
+
+.table-view .table-cell {
+    -fx-text-fill: #1b5e20;         /* Dark green text */
+}
+
+.table-row-cell {
+    -fx-background-color: #e8f5e9;  /* Light green background */
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #c8e6c9;  /* Lighter green */
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #81c784;  /* Medium-light green */
+}
+
+.text-field, .text-area {
+    -fx-background-color: #e8f5e9;  /* Light green background */
+    -fx-text-fill: #1b5e20;         /* Dark green text */
+    -fx-border-color: #81c784;      /* Medium-light green border */
+    -fx-border-radius: 5px;
+}
+
+.scroll-bar {
+    -fx-background-color: #e8f5e9;  /* Light green background */
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: #81c784;  /* Medium-light green */
+}
+
+.scroll-bar .thumb:hover {
+    -fx-background-color: #4caf50;  /* Medium green */
+}
+
+/* TabPane styling */
+.tab-pane {
+  -fx-background-color: #e8f5e9;    /* Light green background */
+  -fx-tab-min-width: 120px;
+  -fx-tab-max-width: 120px;
+}
+
+.tab-pane .tab-header-background {
+  -fx-background-color: #e8f5e9;    /* Light green background */
+}
+
+/* Inactive tabs */
+.tab {
+  -fx-background-color: #c8e6c9;    /* Lighter green */
+  -fx-background-insets: 0 1 0 1, 0, 0;
+  -fx-padding: 5 15 5 15;
+}
+
+.tab .tab-label {
+  -fx-text-fill: #1b5e20;           /* Dark green text */
+  -fx-font-weight: bold;
+}
+
+/* Active (selected) tab */
+.tab:selected {
+  -fx-background-color: #4caf50;    /* Medium green */
+  -fx-focus-color: transparent;
+  -fx-faint-focus-color: transparent;
+}
+
+.tab:selected .tab-label {
+  -fx-text-fill: #ffffff;           /* White text */
+}
+
+/* Hover effect */
+.tab:hover {
+  -fx-background-color: #388e3c;    /* Darker green for hover */
+}
+
+/* Close button */
+.tab .tab-close-button {
+  -fx-background-color: #1b5e20;    /* Dark green */
+}
+
+.tab .tab-close-button:hover {
+  -fx-background-color: #2e7d32;    /* Darker green */
+}
+
+/* Content area */
+.tab-content {
+  -fx-background-color: #e8f5e9;    /* Light green background */
+  -fx-padding: 15;
+  -fx-text-fill: #1b5e20;           /* Dark green text */
+}

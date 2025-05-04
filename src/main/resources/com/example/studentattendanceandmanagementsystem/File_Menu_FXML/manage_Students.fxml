@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane accessibleRole="NODE" prefHeight="886.0" prefWidth="1482.0" styleClass="anchor-pane"  xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.studentattendanceandmanagementsystem.File_Menu_Controller.Manage_Students_Controller">
+    <children>
+
+        <!-- TableView -->
+        <TableView fx:id="studentsTable" layoutX="15.0" layoutY="152.0" prefHeight="334.0" prefWidth="1474.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="152.0">
+            <columns>
+                <TableColumn fx:id="studentIDColumn" prefWidth="80" text="Student ID">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="id" />
+                    </cellValueFactory>
+                </TableColumn>
+
+                <TableColumn fx:id="userIdColumn" prefWidth="84.0" text="User ID">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="userId" />
+                    </cellValueFactory>
+                </TableColumn>
+
+                <TableColumn fx:id="classColumn" prefWidth="74.39999389648438" text="Class">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="className" />
+                    </cellValueFactory>
+                </TableColumn>
+
+                <TableColumn fx:id="firstNameColumn" prefWidth="102.39997863769531" text="First Name">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="fullName" />
+                    </cellValueFactory>
+                </TableColumn>
+
+                <TableColumn fx:id="lastNameColumn" prefWidth="96.7999267578125" text="Last Name">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="mobile" />
+                    </cellValueFactory>
+                </TableColumn>
+
+                <TableColumn fx:id="AttandanceDateColumn" prefWidth="79.20001220703125" text="DOB">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="dateOfBirth" />
+                    </cellValueFactory>
+                </TableColumn>
+
+                <TableColumn fx:id="genderColumn" prefWidth="102.39996337890625" text="Gender">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="gender" />
+                    </cellValueFactory>
+                </TableColumn>
+
+                <TableColumn fx:id="courseColumn" prefWidth="94.39996337890625" text="Course">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="course" />
+                    </cellValueFactory>
+                </TableColumn>
+
+                <TableColumn fx:id="enrolledYearColumn" prefWidth="114.4000244140625" text="Enrolled Year">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="enrolledYear" />
+                    </cellValueFactory>
+                </TableColumn>
+
+                <TableColumn fx:id="fatherMobileColumn" prefWidth="122.4000244140625" text="Father Mobile">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="fatherMobile" />
+                    </cellValueFactory>
+                </TableColumn>
+
+                <TableColumn fx:id="motherMobileColumn" prefWidth="136.00006103515625" text="Mother Mobile">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="motherMobile" />
+                    </cellValueFactory>
+                </TableColumn>
+
+                <TableColumn fx:id="parentAddressColumn" prefWidth="151.199951171875" text="Parent Address">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="parentAddress" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn fx:id="addressColumn" prefWidth="176.800048828125" text="Address">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="course" />
+                    </cellValueFactory>
+                </TableColumn>
+
+            </columns>
+        </TableView>
+
+        <GridPane hgap="15" layoutX="12.0" layoutY="497.0" prefHeight="265.0" prefWidth="1459.0" vgap="15" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="11.200000000000045">
+            <columnConstraints>
+                <ColumnConstraints percentWidth="9.0" />
+                <ColumnConstraints percentWidth="21.0" />
+                <ColumnConstraints percentWidth="10.0" />
+                <ColumnConstraints percentWidth="23.0" />
+                <ColumnConstraints percentWidth="16.0" />
+                <ColumnConstraints percentWidth="26.0" />
+            </columnConstraints>
+
+            <!-- Row 0 -->
+            <Label styleClass="general-label" text="Student ID:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+            <TextField fx:id="studentIDField" editable="false" prefHeight="53.0" prefWidth="292.0" styleClass="text-area" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+            <Label styleClass="general-label" text="First Name:" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+            <TextField fx:id="firstNameField" prefHeight="87.0" prefWidth="315.0" styleClass="text-area" GridPane.columnIndex="3" GridPane.rowIndex="0" />
+
+            <Label styleClass="general-label" text="Last Name:" GridPane.columnIndex="4" GridPane.rowIndex="0" />
+            <TextField fx:id="lastNameField" prefHeight="95.0" prefWidth="383.0" styleClass="text-area" GridPane.columnIndex="5" GridPane.rowIndex="0" />
+
+            <!-- Row 1 -->
+            <Label styleClass="general-label" text="Date of Birth:" GridPane.rowIndex="2" />
+            <DatePicker fx:id="AttandanceDatePicker" prefHeight="68.0" prefWidth="326.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+            <Label styleClass="general-label" text="Gender:" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <ComboBox fx:id="genderComboBox" prefHeight="80.0" prefWidth="345.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                <items>
+                    <FXCollections fx:factory="observableArrayList">
+                        <String fx:value="Male" />
+                        <String fx:value="Female" />
+                        <String fx:value="Other" />
+                    </FXCollections>
+                </items>
+            </ComboBox>
+
+            <Label styleClass="general-label" text="Class:" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+            <ComboBox fx:id="classComboBox" prefHeight="102.0" prefWidth="405.0" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                <items>
+                    <FXCollections fx:factory="observableArrayList">
+                        <String fx:value="Play School" />
+                        <String fx:value="Nursery" />
+                        <String fx:value="L.K.G" />
+                        <String fx:value="U.K.G" />
+                        <String fx:value="Class 1" />
+                        <String fx:value="Class 2" />
+                        <String fx:value="Class 3" />
+                        <String fx:value="Class 4" />
+                        <String fx:value="Class 5" />
+                        <String fx:value="Class 6" />
+                        <String fx:value="Class 7" />
+                        <String fx:value="Class 8" />
+                        <String fx:value="Class 9" />
+                        <String fx:value="Class 10" />
+                        <String fx:value="Class 11" />
+                        <String fx:value="Class 12" />
+                    </FXCollections>
+                </items>
+            </ComboBox>
+
+            <Label styleClass="general-label" text="Course:" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <ComboBox fx:id="courseComboBox" layoutX="557.0" layoutY="51.0" prefHeight="72.0" prefWidth="358.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                <items>
+                    <FXCollections fx:factory="observableArrayList">
+                        <String fx:value="Arts" />
+                        <String fx:value="Science" />
+                        <String fx:value="Commerce" />
+
+                    </FXCollections>
+                </items>
+            </ComboBox>
+            <Label styleClass="general-label" text="Address:" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+            <TextArea fx:id="addressArea" accessibleRole="PARENT" prefHeight="78.0" prefRowCount="2" prefWidth="397.0" styleClass="address-area" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+
+            <!-- Row 3 -->
+            <Label styleClass="general-label" text="Father Mobile:" GridPane.rowIndex="3" />
+            <TextField fx:id="fatherMobileField" prefHeight="64.0" prefWidth="292.0" styleClass="text-area" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+
+            <Label styleClass="general-label" text="Mother Mobile:" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <TextField fx:id="motherMobileField" prefHeight="83.0" prefWidth="349.0" styleClass="text-area" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+
+            <Label styleClass="general-label" text="Parent Address:" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+            <TextArea fx:id="parentAddressArea" prefHeight="90.0" prefRowCount="2" prefWidth="391.0" styleClass="address-area" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+
+            <!-- Row 4 -->
+            <Label styleClass="general-label" text="Enrolled Year:" GridPane.rowIndex="4" />
+            <TextField fx:id="enrolledYearField" editable="false" prefHeight="54.0" prefWidth="288.0" styleClass="text-area" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="userIDField" editable="false" layoutX="557.0" layoutY="176.0" prefHeight="52.0" prefWidth="294.0" styleClass="text-area" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label layoutX="417.0" layoutY="180.0" styleClass="general-label" text="User ID :" GridPane.rowIndex="1" />
+
+            <rowConstraints>
+                <RowConstraints maxHeight="72.80000610351563" minHeight="24.39996337890625" prefHeight="37.6" vgrow="ALWAYS" />
+                <RowConstraints maxHeight="77.40003662109375" minHeight="8.79999389648438" prefHeight="44.8" vgrow="ALWAYS" />
+                <RowConstraints maxHeight="94.20001220703125" minHeight="21.599957275390622" prefHeight="36.20002441406251" vgrow="ALWAYS" />
+                <RowConstraints maxHeight="111.40003662109376" minHeight="25.000024414062494" prefHeight="41.0" vgrow="ALWAYS" />
+                <RowConstraints maxHeight="91.20003662109377" minHeight="29.0" prefHeight="43.60000000000002" vgrow="ALWAYS" />
+            </rowConstraints>
+
+        </GridPane>
+        <GridPane layoutX="15.0" layoutY="45.0" prefHeight="98.0" prefWidth="1459.0" AnchorPane.rightAnchor="11.0" AnchorPane.topAnchor="45.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="218.4" minWidth="10.0" prefWidth="170.4" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="233.59997558593747" minWidth="10.0" prefWidth="186.4" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="227.20003662109377" minWidth="10.0" prefWidth="202.39996337890625" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="288.0000366210937" minWidth="10.0" prefWidth="288.0000366210937" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="294.4" minWidth="10.0" prefWidth="215.19992675781248" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="351.2000732421875" minWidth="0.0" prefWidth="351.2000732421875" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints />
+                <RowConstraints maxHeight="24.800009155273436" minHeight="10.0" prefHeight="11.200006866455077" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="56.599996948242186" minHeight="10.0" prefHeight="42.39999084472656" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="48.80000915527343" minHeight="2.200003051757804" prefHeight="44.80000915527343" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <TextField fx:id="searchByUserID" prefHeight="43.0" prefWidth="226.0" styleClass="text-area" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                <Label prefHeight="20.0" prefWidth="260.0" styleClass="general-label" text="Search By User ID:" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+                <Label layoutX="10.0" layoutY="47.0" prefHeight="20.0" prefWidth="304.0" styleClass="general-label" text="Search By Student Name:" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+                <TextField fx:id="searchByStudentName" layoutX="130.0" layoutY="43.0" prefHeight="83.0" prefWidth="336.0" styleClass="text-area" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                <Label layoutX="210.0" layoutY="47.0" prefHeight="20.0" prefWidth="221.0" styleClass="general-label" text="Search By Student Class:" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+                <ComboBox fx:id="searchByClassCombo" prefHeight="80.0" prefWidth="405.0" GridPane.columnIndex="5" GridPane.rowIndex="2">
+                    <items>
+                        <FXCollections fx:factory="observableArrayList">
+                            <String fx:value="Play School" />
+                            <String fx:value="Nursery" />
+                            <String fx:value="L.K.G" />
+                            <String fx:value="U.K.G" />
+                            <String fx:value="Class 1" />
+                            <String fx:value="Class 2" />
+                            <String fx:value="Class 3" />
+                            <String fx:value="Class 4" />
+                            <String fx:value="Class 5" />
+                            <String fx:value="Class 6" />
+                            <String fx:value="Class 7" />
+                            <String fx:value="Class 8" />
+                            <String fx:value="Class 9" />
+                            <String fx:value="Class 10" />
+                            <String fx:value="Class 11" />
+                            <String fx:value="Class 12" />
+                        </FXCollections>
+                    </items>
+                </ComboBox>
+                <TextField fx:id="searchByEnrolledYear" layoutX="128.0" layoutY="43.0" prefHeight="41.0" prefWidth="202.0" styleClass="text-area" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                <Label layoutX="10.0" layoutY="47.0" prefHeight="20.0" prefWidth="234.0" styleClass="general-label" text="Search By Enrolled Year:" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+                <Label layoutX="236.0" layoutY="47.0" prefHeight="20.0" prefWidth="220.0" styleClass="general-label" text="Search By Father Mobile:" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+                <TextField fx:id="searchByFatherMobile" layoutX="381.0" layoutY="43.0" prefHeight="43.0" prefWidth="324.0" styleClass="text-area" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                <Label layoutX="236.0" layoutY="77.0" prefHeight="20.0" prefWidth="261.0" styleClass="general-label" text="Search By Mother Mobile:" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+                <TextField fx:id="searchByMotherMobile" layoutX="381.0" layoutY="73.0" prefHeight="125.0" prefWidth="434.0" styleClass="text-area" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+            </children>
+        </GridPane>
+
+        <!-- Title -->
+        <Label layoutX="383.0" layoutY="19.0" styleClass="headerText" text="Manage Students" AnchorPane.topAnchor="19.0">
+            <font>
+                <Font name="System" size="24" />
+            </font>
+        </Label>
+        <Text fx:id="errorText" layoutX="41.0" layoutY="793.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="general-text" textAlignment="CENTER" wrappingWidth="1249.336669921875">
+         <font>
+            <Font size="18.0" />
+         </font></Text>
+
+         <!-- Buttons Row -->
+         <HBox alignment="CENTER" layoutX="402.0" layoutY="818.0" spacing="20">
+             <Button fx:id="updateButton" onAction="#handleUpdateStudent" prefHeight="56.0" prefWidth="176.0" text="Update Students" />
+             <Button fx:id="deleteButton" onAction="#handleDeleteStudent" prefHeight="53.0" prefWidth="164.0" text="Delete Students" />
+             <Button fx:id="clearButton" onAction="#handleClearForm" prefHeight="46.0" prefWidth="148.0" text="Clear" />
+         </HBox>
+
+
+    </children>
+</AnchorPane>

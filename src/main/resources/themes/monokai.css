@@ -1,0 +1,195 @@
+/* Monokai Theme */
+/* Based on the popular Monokai color scheme */
+
+.root {
+    -fx-background-color: #272822;  /* Monokai background */
+    -fx-text-fill: #f8f8f2;         /* Monokai foreground */
+}
+
+.anchor-pane {
+    -fx-background-color: #272822;  /* Monokai background */
+}
+
+.forget-password {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: RED;
+}
+.general-label {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: Black;
+}
+.general-text {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-fill: Black;
+}
+.headerText {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1e90ff;
+}
+
+.button, .Small-Button {
+    -fx-background-color: #a6e22e;  /* Monokai green */
+    -fx-text-fill: #272822;         /* Monokai background */
+    -fx-font-weight: bold;
+    -fx-background-radius: 5px;
+}
+
+.button:hover, .Small-Button:hover {
+    -fx-background-color: #f92672;  /* Monokai pink */
+    -fx-text-fill: #f8f8f2;         /* Monokai foreground */
+    -fx-cursor: hand;
+}
+
+.combo-box, .menu-button {
+    -fx-background-color: #3e3d32;  /* Slightly lighter background */
+    -fx-text-fill: #f8f8f2;         /* Monokai foreground */
+    -fx-border-color: #75715e;      /* Monokai brown */
+    -fx-border-radius: 5px;
+}
+
+.combo-box .arrow, .menu-button .arrow {
+    -fx-background-color: #f92672;  /* Monokai pink */
+}
+
+.combo-box .list-cell, .menu-button .label {
+    -fx-text-fill: #f8f8f2;         /* Monokai foreground */
+}
+
+.context-menu {
+    -fx-background-color: #3e3d32;  /* Slightly lighter background */
+    -fx-border-color: #75715e;      /* Monokai brown */
+}
+
+.menu-item {
+    -fx-background-color: #3e3d32;  /* Slightly lighter background */
+}
+
+.menu-item .label {
+    -fx-text-fill: #f8f8f2;         /* Monokai foreground */
+}
+
+.menu-item:focused {
+    -fx-background-color: #a6e22e;  /* Monokai green */
+}
+
+.menu-item:focused .label {
+    -fx-text-fill: #272822;         /* Monokai background */
+}
+
+.table-view {
+    -fx-background-color: #3e3d32;  /* Slightly lighter background */
+    -fx-border-color: #75715e;      /* Monokai brown */
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #272822;  /* Monokai background */
+}
+
+.table-view .column-header, .table-view .filler {
+    -fx-background-color: transparent;
+    -fx-border-color: #75715e;      /* Monokai brown */
+    -fx-border-width: 0 0 1 0;
+    -fx-text-fill: #f8f8f2;         /* Monokai foreground */
+}
+
+.table-view .table-cell {
+    -fx-text-fill: #f8f8f2;         /* Monokai foreground */
+}
+
+.table-row-cell {
+    -fx-background-color: #272822;  /* Monokai background */
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #3e3d32;  /* Slightly lighter background */
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #ae81ff;  /* Monokai purple */
+}
+
+.table-row-cell:selected .table-cell {
+    -fx-text-fill: #272822;         /* Monokai background */
+}
+
+.text-field, .text-area {
+    -fx-background-color: #3e3d32;  /* Slightly lighter background */
+    -fx-text-fill: #f8f8f2;         /* Monokai foreground */
+    -fx-border-color: #75715e;      /* Monokai brown */
+    -fx-border-radius: 5px;
+}
+
+.scroll-bar {
+    -fx-background-color: #272822;  /* Monokai background */
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: #75715e;  /* Monokai brown */
+}
+
+.scroll-bar .thumb:hover {
+    -fx-background-color: #f92672;  /* Monokai pink */
+}
+
+/* TabPane styling */
+.tab-pane {
+  -fx-background-color: #272822;    /* Monokai background */
+  -fx-tab-min-width: 120px;
+  -fx-tab-max-width: 120px;
+}
+
+.tab-pane .tab-header-background {
+  -fx-background-color: #272822;    /* Monokai background */
+}
+
+/* Inactive tabs */
+.tab {
+  -fx-background-color: #3e3d32;    /* Slightly lighter background */
+  -fx-background-insets: 0 1 0 1, 0, 0;
+  -fx-padding: 5 15 5 15;
+}
+
+.tab .tab-label {
+  -fx-text-fill: #f8f8f2;           /* Monokai foreground */
+  -fx-font-weight: bold;
+}
+
+/* Active (selected) tab */
+.tab:selected {
+  -fx-background-color: #a6e22e;    /* Monokai green */
+  -fx-focus-color: transparent;
+  -fx-faint-focus-color: transparent;
+}
+
+.tab:selected .tab-label {
+  -fx-text-fill: #272822;           /* Monokai background */
+}
+
+/* Hover effect */
+.tab:hover {
+  -fx-background-color: #f92672;    /* Monokai pink */
+}
+
+.tab:hover .tab-label {
+  -fx-text-fill: #f8f8f2;           /* Monokai foreground */
+}
+
+/* Close button */
+.tab .tab-close-button {
+  -fx-background-color: #f8f8f2;    /* Monokai foreground */
+}
+
+.tab .tab-close-button:hover {
+  -fx-background-color: #fd971f;    /* Monokai orange */
+}
+
+/* Content area */
+.tab-content {
+  -fx-background-color: #272822;    /* Monokai background */
+  -fx-padding: 15;
+  -fx-text-fill: #f8f8f2;           /* Monokai foreground */
+}

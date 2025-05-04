@@ -1,0 +1,357 @@
+/* Dracula Theme */
+/* Based on the official Dracula color palette: https://draculatheme.com/contribute */
+
+.root {
+    -fx-background-color: #282a36;  /* Dracula background */
+    -fx-text-fill: #f8f8f2;         /* Dracula foreground */
+}
+
+.anchor-pane {
+    -fx-background-color: #282a36;  /* Dracula background */
+}
+
+.button, .Small-Button {
+    -fx-background-color: #bd93f9;  /* Dracula purple */
+    -fx-text-fill: #f8f8f2;         /* Dracula foreground */
+    -fx-font-weight: bold;
+    -fx-background-radius: 5px;
+}
+
+.button:hover, .Small-Button:hover {
+    -fx-background-color: #ff79c6;  /* Dracula pink */
+    -fx-cursor: hand;
+}
+
+.combo-box, .menu-button {
+    -fx-background-color: #44475a;  /* Dracula selection background */
+    -fx-text-fill: #f8f8f2;         /* Dracula foreground */
+    -fx-border-color: #6272a4;      /* Dracula comment */
+    -fx-border-radius: 5px;
+}
+
+.combo-box .arrow, .menu-button .arrow {
+    -fx-background-color: #ff79c6;  /* Dracula pink */
+}
+
+.combo-box .list-cell, .menu-button .label {
+    -fx-text-fill: #f8f8f2;         /* Dracula foreground */
+}
+
+.context-menu {
+    -fx-background-color: #44475a;  /* Dracula selection background */
+    -fx-border-color: #6272a4;      /* Dracula comment */
+}
+.forget-password {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: RED;
+}
+.general-label {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+.general-text {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-fill: white;
+}
+.headerText {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1e90ff;
+}
+.menu-item {
+    -fx-background-color: #44475a;  /* Dracula selection background */
+}
+
+.menu-item .label {
+    -fx-text-fill: #f8f8f2;         /* Dracula foreground */
+}
+
+.menu-item:focused {
+    -fx-background-color: #bd93f9;  /* Dracula purple */
+}
+
+.menu-item:focused .label {
+    -fx-text-fill: #f8f8f2;         /* Dracula foreground */
+}
+
+.table-view {
+    -fx-background-color: #44475a;  /* Dracula selection background */
+    -fx-border-color: #6272a4;      /* Dracula comment */
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #282a36;  /* Dracula background */
+}
+
+.table-view .column-header, .table-view .filler {
+    -fx-background-color: transparent;
+    -fx-border-color: #6272a4;      /* Dracula comment */
+    -fx-border-width: 0 0 1 0;
+    -fx-text-fill: #f8f8f2;         /* Dracula foreground */
+}
+
+.table-view .table-cell {
+    -fx-text-fill: #f8f8f2;         /* Dracula foreground */
+}
+
+.table-row-cell {
+    -fx-background-color: #282a36;  /* Dracula background */
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #44475a;  /* Dracula selection background */
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #6272a4;  /* Dracula comment */
+}
+
+.text-field, .text-area {
+    -fx-background-color: #44475a;  /* Dracula selection background */
+    -fx-text-fill: #f8f8f2;         /* Dracula foreground */
+    -fx-border-color: #6272a4;      /* Dracula comment */
+    -fx-border-radius: 5px;
+}
+
+.general-text {
+    -fx-fill: #f8f8f2;              /* Dracula foreground */
+}
+
+.scroll-bar {
+    -fx-background-color: #282a36;  /* Dracula background */
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: #6272a4;  /* Dracula comment */
+}
+
+.scroll-bar .thumb:hover {
+    -fx-background-color: #bd93f9;  /* Dracula purple */
+}
+
+/* Main TabPane styling from provided code */
+.tab-pane {
+  -fx-background-color: #282a36; /* Dracula background */
+  -fx-tab-min-width: 120px;
+  -fx-tab-max-width: 120px;
+}
+
+.tab-pane .tab-header-background {
+  -fx-background-color: #282a36; /* Dracula background */
+}
+
+/* Inactive tabs */
+.tab {
+  -fx-background-color: #282a36; /* Dracula background */
+  -fx-background-insets: 0 1 0 1, 0, 0;
+  -fx-padding: 5 15 5 15;
+}
+
+.tab .tab-label {
+  -fx-text-fill: #f8f8f2; /* Dracula foreground */
+  -fx-font-weight: bold;
+}
+
+/* Active (selected) tab */
+.tab:selected {
+  -fx-background-color: #bd93f9; /* Dracula purple */
+  -fx-focus-color: transparent;
+  -fx-faint-focus-color: transparent;
+}
+
+.tab:selected .tab-label {
+  -fx-text-fill: #f8f8f2; /* Dracula foreground */
+}
+
+/* Hover effect */
+.tab:hover {
+  -fx-background-color: #ff79c6; /* Dracula pink */
+}
+
+/* Close button */
+.tab .tab-close-button {
+  -fx-background-color: #f8f8f2; /* Dracula foreground */
+}
+
+.tab .tab-close-button:hover {
+  -fx-background-color: #ff5555; /* Dracula red */
+}
+
+/* Content area */
+.tab-content {
+  -fx-background-color: #282a36; /* Dracula background */
+  -fx-padding: 15;
+  -fx-text-fill: #f8f8f2; /* Dracula foreground */
+}
+/* Dracula Theme */
+/* Based on the official Dracula color palette: https://draculatheme.com/contribute */
+
+.root {
+    -fx-background-color: #282a36;  /* Dracula background */
+    -fx-text-fill: #f8f8f2;         /* Dracula foreground */
+}
+
+.anchor-pane {
+    -fx-background-color: #282a36;  /* Dracula background */
+}
+
+.button, .Small-Button {
+    -fx-background-color: #bd93f9;  /* Dracula purple */
+    -fx-text-fill: #f8f8f2;         /* Dracula foreground */
+    -fx-font-weight: bold;
+    -fx-background-radius: 5px;
+}
+
+.button:hover, .Small-Button:hover {
+    -fx-background-color: #ff79c6;  /* Dracula pink */
+    -fx-cursor: hand;
+}
+
+.combo-box, .menu-button {
+    -fx-background-color: #44475a;  /* Dracula selection background */
+    -fx-text-fill: #f8f8f2;         /* Dracula foreground */
+    -fx-border-color: #6272a4;      /* Dracula comment */
+    -fx-border-radius: 5px;
+}
+
+.combo-box .arrow, .menu-button .arrow {
+    -fx-background-color: #ff79c6;  /* Dracula pink */
+}
+
+.combo-box .list-cell, .menu-button .label {
+    -fx-text-fill: #f8f8f2;         /* Dracula foreground */
+}
+
+.context-menu {
+    -fx-background-color: #44475a;  /* Dracula selection background */
+    -fx-border-color: #6272a4;      /* Dracula comment */
+}
+
+.menu-item {
+    -fx-background-color: #44475a;  /* Dracula selection background */
+}
+
+.menu-item .label {
+    -fx-text-fill: #f8f8f2;         /* Dracula foreground */
+}
+
+.menu-item:focused {
+    -fx-background-color: #bd93f9;  /* Dracula purple */
+}
+
+.menu-item:focused .label {
+    -fx-text-fill: #f8f8f2;         /* Dracula foreground */
+}
+
+.table-view {
+    -fx-background-color: #44475a;  /* Dracula selection background */
+    -fx-border-color: #6272a4;      /* Dracula comment */
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #282a36;  /* Dracula background */
+}
+
+.table-view .column-header, .table-view .filler {
+    -fx-background-color: transparent;
+    -fx-border-color: #6272a4;      /* Dracula comment */
+    -fx-border-width: 0 0 1 0;
+    -fx-text-fill: #f8f8f2;         /* Dracula foreground */
+}
+
+.table-view .table-cell {
+    -fx-text-fill: #f8f8f2;         /* Dracula foreground */
+}
+
+.table-row-cell {
+    -fx-background-color: #282a36;  /* Dracula background */
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #44475a;  /* Dracula selection background */
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #6272a4;  /* Dracula comment */
+}
+
+.text-field, .text-area {
+    -fx-background-color: #44475a;  /* Dracula selection background */
+    -fx-text-fill: #f8f8f2;         /* Dracula foreground */
+    -fx-border-color: #6272a4;      /* Dracula comment */
+    -fx-border-radius: 5px;
+}
+
+.general-text {
+    -fx-fill: #f8f8f2;              /* Dracula foreground */
+}
+
+.scroll-bar {
+    -fx-background-color: #282a36;  /* Dracula background */
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: #6272a4;  /* Dracula comment */
+}
+
+.scroll-bar .thumb:hover {
+    -fx-background-color: #bd93f9;  /* Dracula purple */
+}
+
+/* Main TabPane styling from provided code */
+.tab-pane {
+  -fx-background-color: #282a36; /* Dracula background */
+  -fx-tab-min-width: 120px;
+  -fx-tab-max-width: 120px;
+}
+
+.tab-pane .tab-header-background {
+  -fx-background-color: #282a36; /* Dracula background */
+}
+
+/* Inactive tabs */
+.tab {
+  -fx-background-color: #282a36; /* Dracula background */
+  -fx-background-insets: 0 1 0 1, 0, 0;
+  -fx-padding: 5 15 5 15;
+}
+
+.tab .tab-label {
+  -fx-text-fill: #f8f8f2; /* Dracula foreground */
+  -fx-font-weight: bold;
+}
+
+/* Active (selected) tab */
+.tab:selected {
+  -fx-background-color: #bd93f9; /* Dracula purple */
+  -fx-focus-color: transparent;
+  -fx-faint-focus-color: transparent;
+}
+
+.tab:selected .tab-label {
+  -fx-text-fill: #f8f8f2; /* Dracula foreground */
+}
+
+/* Hover effect */
+.tab:hover {
+  -fx-background-color: #ff79c6; /* Dracula pink */
+}
+
+/* Close button */
+.tab .tab-close-button {
+  -fx-background-color: #f8f8f2; /* Dracula foreground */
+}
+
+.tab .tab-close-button:hover {
+  -fx-background-color: #ff5555; /* Dracula red */
+}
+
+/* Content area */
+.tab-content {
+  -fx-background-color: #282a36; /* Dracula background */
+  -fx-padding: 15;
+  -fx-text-fill: #f8f8f2; /* Dracula foreground */
+}

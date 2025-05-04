@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane prefHeight="780.0" prefWidth="1340.0" styleClass="anchor-pane" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.studentattendanceandmanagementsystem.File_Menu_Controller.SubmitFeedbackController">
+
+    <children>
+        <!-- Title -->
+        <Label styleClass="headerText" text="Student Attendance MS - Submit Feedback" AnchorPane.leftAnchor="407.0" AnchorPane.rightAnchor="407.0" AnchorPane.topAnchor="23.0" />
+
+        <!-- Instruction -->
+        <Label styleClass="general-label" text="We value your feedback! Please share your thoughts or report issues below:" AnchorPane.leftAnchor="360.0" AnchorPane.rightAnchor="360.0" AnchorPane.topAnchor="76.0" />
+
+        <!-- TextArea with proper constraints -->
+        <TextArea layoutX="220.0" prefHeight="560.0" prefWidth="862.0" styleClass="feedback-textArea" wrapText="true" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="220.0" AnchorPane.rightAnchor="258.0" AnchorPane.topAnchor="120.0" />
+
+        <!-- Buttons container -->
+        <HBox alignment="CENTER" spacing="20" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="554.0" AnchorPane.rightAnchor="554.0">
+            <Button onAction="#handleCancel" prefHeight="41.0" prefWidth="115.0" styleClass="Small-Button" text="Cancel" />
+            <Button onAction="#handleSubmit" prefHeight="41.0" prefWidth="162.0" styleClass="Small-Button" text="Submit Feedback" />
+        </HBox>
+    </children>
+</AnchorPane>

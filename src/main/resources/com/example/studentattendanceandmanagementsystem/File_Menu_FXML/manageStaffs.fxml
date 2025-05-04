@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="898.0" prefWidth="1570.0"  xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.studentattendanceandmanagementsystem.File_Menu_Controller.ManageStaffsController">
+   <children>
+      <TableView fx:id="staffTable" layoutX="8.8" layoutY="156.0" prefHeight="442.0" prefWidth="1555.0" AnchorPane.leftAnchor="9.0" AnchorPane.rightAnchor="6.0" AnchorPane.topAnchor="156.0">
+         <columns>
+            <TableColumn fx:id="slNoCol" prefWidth="111.9999942779541" text="SL. No." />
+            <TableColumn fx:id="userIdCol" prefWidth="163.20001220703125" text="User ID" />
+            <TableColumn fx:id="firstNameCol" prefWidth="180.0" text="First  Name" />
+            <TableColumn fx:id="lastNameCol" prefWidth="233.5999755859375" text="Last  Name" />
+            <TableColumn fx:id="departmentCol" prefWidth="183.20004272460938" text="Department" />
+            <TableColumn fx:id="positionCol" prefWidth="217.60009765625" text="Position" />
+            <TableColumn fx:id="hireDateCol" prefWidth="217.5999755859375" text="Hire Date" />
+            <TableColumn fx:id="mobileCol" prefWidth="224.0" text="Mobile" />
+         </columns>
+      </TableView>
+      <HBox alignment="CENTER_RIGHT" layoutX="559.0" layoutY="874.0" prefHeight="61.0" prefWidth="546.0" spacing="10" AnchorPane.bottomAnchor="16.4" AnchorPane.rightAnchor="464.6">
+         <children>
+            <Button onAction="#LoadTable" prefHeight="62.0" prefWidth="148.0" styleClass="Small-Button" text="Refresh Table" />
+            <Button onAction="#handleClear" prefHeight="61.0" prefWidth="142.0" styleClass="Small-Button" text="Clear" />
+            <Button onAction="#handleDelete" prefHeight="60.0" prefWidth="145.0" styleClass="Small-Button" text="Delete" />
+            <Button layoutX="284.0" layoutY="10.0" onAction="#handleUpdate" prefHeight="64.0" prefWidth="126.0" styleClass="Small-Button" text="Update" />
+         </children>
+      </HBox>
+      <GridPane hgap="10" layoutX="127.0" layoutY="671.0" prefHeight="164.0" prefWidth="1380.0" vgap="10" AnchorPane.bottomAnchor="117.0" AnchorPane.leftAnchor="126.79999999999995" AnchorPane.rightAnchor="63.0">
+         <columnConstraints>
+            <ColumnConstraints halignment="RIGHT" maxWidth="145.60000610351562" minWidth="92.79999389648438" prefWidth="95.2000244140625" />
+            <ColumnConstraints maxWidth="259.2000061035156" minWidth="154.39999389648435" prefWidth="222.60000000000002" />
+            <ColumnConstraints halignment="RIGHT" maxWidth="328.00001220703126" minWidth="68.0" prefWidth="180.59999999999997" />
+            <ColumnConstraints maxWidth="323.99999999999994" minWidth="106.39998779296877" prefWidth="233.39999999999998" />
+            <ColumnConstraints maxWidth="323.99999999999994" minWidth="85.8000366210938" prefWidth="123.99997558593748" />
+            <ColumnConstraints minWidth="0.0" />
+            <ColumnConstraints maxWidth="194.4000244140625" minWidth="0.0" prefWidth="0.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" vgrow="ALWAYS" />
+            <RowConstraints maxHeight="47.19997558593751" minHeight="21.6" prefHeight="37.6000244140625" vgrow="ALWAYS" />
+            <RowConstraints maxHeight="40.599951171875006" minHeight="10.200000000000003" prefHeight="38.999975585937506" vgrow="ALWAYS" />
+            <RowConstraints />
+         </rowConstraints>
+         <children>
+            <Label styleClass="general-label" text="User ID:" GridPane.rowIndex="1" />
+            <TextField fx:id="userIdField" editable="false" prefHeight="49.0" prefWidth="260.0" styleClass="text-area" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label styleClass="general-label" text="First Name:" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <TextField fx:id="firstNameField" prefHeight="80.0" prefWidth="243.0" styleClass="text-area" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Label styleClass="general-label" text="Last Name:" GridPane.rowIndex="2" />
+            <TextField fx:id="lastNameField" prefHeight="55.0" prefWidth="260.0" styleClass="text-area" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label styleClass="general-label" text="Department:" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Label styleClass="general-label" text="Position:" GridPane.rowIndex="3" />
+            <ComboBox fx:id="positionComboBoxField" prefHeight="49.0" prefWidth="226.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <items>
+                  <FXCollections fx:factory="observableArrayList">
+                     <String fx:value="Clerk" />
+                     <String fx:value="Librarian" />
+                     <String fx:value="Manager" />
+                     <String fx:value="Accountant" />
+                     <String fx:value="Assistant Librarian" />
+                     <String fx:value="Payroll Manager" />
+                     <String fx:value="Account Supervisor" />
+                     <String fx:value="Office Manager" />
+                     <String fx:value="Library Supervisor" />
+                     <String fx:value="Assistant Accountant" />
+                     <String fx:value="Secretary" />
+                     <String fx:value="Library Assistant" />
+                     <String fx:value="Financial Analyst" />
+                     <String fx:value="Receptionist" />
+                     <String fx:value="Financial Consultant" />
+                     <String fx:value="Administrator" />
+                     <String fx:value="Head Librarian" />
+                     <String fx:value="Accounting Assistant" />
+                     <String fx:value="HR Manager" />
+                     <String fx:value="Auditor" />
+                     <String fx:value="Tax Consultant" />
+                     <String fx:value="Tax Analyst" />
+                     <String fx:value="Finance Manager" />
+                     <String fx:value="HR Specialist" />
+                     <String fx:value="Accounts Manager" />
+                  </FXCollections>
+               </items>
+            </ComboBox>
+            <Label styleClass="general-label" text="Hire Date (YYYY-MM-DD):" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <ComboBox fx:id="departmentComboField" layoutX="113.0" layoutY="119.0" prefHeight="58.0" prefWidth="250.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <items>
+                  <FXCollections fx:factory="observableArrayList">
+                     <String fx:value="Admin" />
+                     <String fx:value="Library" />
+                     <String fx:value="Accounts" />
+
+                  </FXCollections>
+               </items>
+            </ComboBox>
+            <DatePicker fx:id="hireDateField" prefHeight="62.0" prefWidth="260.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="general-text" text="Mobile Number" wrappingWidth="127.0418701171875" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+            <TextField fx:id="mobileField" prefHeight="67.0" prefWidth="218.0" styleClass="text-area" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="17.0" layoutY="46.0" prefHeight="127.0" prefWidth="1535.0" AnchorPane.rightAnchor="17.799999999999955" AnchorPane.topAnchor="46.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="260.8000152587891" minWidth="10.0" prefWidth="195.1999938964844" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="292.80003662109374" minWidth="10.0" prefWidth="196.2000061035156" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="227.20003662109377" minWidth="10.0" prefWidth="196.19999999999993" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="359.79999999999995" minWidth="10.0" prefWidth="245.20000000000005" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="368.40007324218755" minWidth="10.0" prefWidth="219.99997558593748" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="351.2000732421875" minWidth="0.0" prefWidth="267.4000244140625" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints maxHeight="66.00000610351563" minHeight="10.0" prefHeight="43.199990844726564" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="45.60000915527344" minHeight="2.200003051757804" prefHeight="45.60000915527344" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <TextField fx:id="searchByuserID" prefHeight="36.0" prefWidth="179.0" styleClass="text-area" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label prefHeight="18.0" prefWidth="130.0" styleClass="general-label" text="Search By User ID :" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+            <Label layoutX="10.0" layoutY="47.0" prefHeight="20.0" prefWidth="174.0" styleClass="general-label" text="Search By  Staff Name:" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+            <TextField fx:id="searchByFullName" layoutX="130.0" layoutY="43.0" prefHeight="36.0" prefWidth="289.0" styleClass="text-area" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Label layoutX="210.0" layoutY="47.0" prefHeight="20.0" prefWidth="165.0" styleClass="general-label" text="Search By Department :" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+            <ComboBox fx:id="searchByDepartmentCombo" prefHeight="42.0" prefWidth="336.0" GridPane.columnIndex="5" GridPane.rowIndex="1">
+               <items>
+                  <FXCollections fx:factory="observableArrayList">
+                     <String fx:value="Admin" />
+                     <String fx:value="Library" />
+                     <String fx:value="Accounts" />
+                  </FXCollections>
+               </items>
+            </ComboBox>
+            <TextField fx:id="searchByPosition" layoutX="128.0" layoutY="43.0" prefHeight="36.0" prefWidth="179.0" styleClass="text-area" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label layoutX="236.0" layoutY="47.0" prefHeight="20.0" prefWidth="178.0" styleClass="general-label" text="Search By Staff Mobile:" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+            <TextField fx:id="searchByMobile" layoutX="381.0" layoutY="43.0" prefHeight="36.0" prefWidth="289.0" styleClass="text-area" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Label layoutX="236.0" layoutY="77.0" prefHeight="20.0" prefWidth="155.0" styleClass="general-label" text="Search By Hire Date :" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+            <DatePicker fx:id="searchByHireDate" prefHeight="26.0" prefWidth="347.0" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+            <Label layoutX="40.0" layoutY="48.0" prefHeight="18.0" prefWidth="186.0" styleClass="general-label" text="Search By Staff  Position :" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+      <Text fill="#52ac82" layoutX="527.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="headerText" text="Manage Staff" AnchorPane.rightAnchor="584.427734375" AnchorPane.topAnchor="12.41796875" />
+      <Text fx:id="errorText" layoutX="300.0" layoutY="864.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="general-text" textAlignment="CENTER" wrappingWidth="902.3999633789062" AnchorPane.bottomAnchor="84.486328125" AnchorPane.rightAnchor="367.60003662109375" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="738.0" prefWidth="1214.0" styleClass="anchor-pane" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.studentattendanceandmanagementsystem.File_Menu_Controller.AddTeachersController">
+
+    <Label layoutX="548.0" layoutY="14.0" prefHeight="30.0" prefWidth="315.0" styleClass="headerText" text="Add Teacher Form" />
+
+    <!-- First Name -->
+    <Label layoutX="405.0" layoutY="110.0" styleClass="general-label" text="First Name:" />
+    <TextField fx:id="firstNameField" layoutX="555.0" layoutY="105.0" prefHeight="42.0" prefWidth="300" styleClass="text-area" />
+
+    <!-- Last Name -->
+    <Label layoutX="406.0" layoutY="171.0" styleClass="general-label" text="Last Name:" />
+    <TextField fx:id="lastNameField" layoutX="556.0" layoutY="166.0" prefHeight="42.0" prefWidth="300" styleClass="text-area" />
+
+    <!-- Department -->
+    <Label layoutX="409.0" layoutY="228.0" styleClass="general-label" text="Department:" />
+    <ComboBox fx:id="departmentComboBox" layoutX="559.0" layoutY="224.0" prefHeight="42.0" prefWidth="300.0">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="Mathematics" />
+                <String fx:value="Science" />
+                <String fx:value="English" />
+                <String fx:value="Hindi" />
+                <String fx:value="Social Studies" />
+                <String fx:value="Computer Science" />
+                <String fx:value="Physical Education" />
+                <String fx:value="Art" />
+                <String fx:value="Music" />
+                <String fx:value="Sanskrit" />
+                <String fx:value="EVS" />
+                <String fx:value="Commerce" />
+                <String fx:value="Economics" />
+                <String fx:value="Accounts" />
+                <String fx:value="Biology" />
+                <String fx:value="Chemistry" />
+                <String fx:value="Physics" />
+            </FXCollections>
+        </items>
+    </ComboBox>
+    <!-- Subject Specialization -->
+    <Label layoutX="406.0" layoutY="280.0" styleClass="general-label" text="Subject Specialization:" />
+    <ComboBox fx:id="specialisationComboBox" layoutX="556.0" layoutY="275.0" prefHeight="26.0" prefWidth="300.0">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="Mathematics" />
+                <String fx:value="Science" />
+                <String fx:value="English" />
+                <String fx:value="Hindi" />
+                <String fx:value="Social Studies" />
+                <String fx:value="Computer Science" />
+                <String fx:value="Physical Education" />
+                <String fx:value="Art" />
+                <String fx:value="Music" />
+                <String fx:value="Sanskrit" />
+                <String fx:value="EVS" />
+                <String fx:value="Commerce" />
+                <String fx:value="Economics" />
+                <String fx:value="Accounts" />
+                <String fx:value="Biology" />
+                <String fx:value="Chemistry" />
+                <String fx:value="Physics" />
+            </FXCollections>
+        </items>
+    </ComboBox>
+
+    <!-- Hire Date -->
+    <Label layoutX="400.0" layoutY="339.0" styleClass="general-label" text="Hire Date:" />
+    <DatePicker fx:id="hireDatePicker" layoutX="550.0" layoutY="334.0" prefWidth="300" />
+
+    <!-- Years of Experience -->
+    <Label layoutX="405.0" layoutY="406.0" styleClass="general-label" text="Years of Experience:" />
+    <TextField fx:id="experienceField" layoutX="555.0" layoutY="401.0" prefHeight="42.0" prefWidth="300" styleClass="text-area" />
+
+    <!-- Last Taught in School -->
+    <Label layoutX="409.0" layoutY="468.0" styleClass="general-label" text="Last Taught (Date):" />
+    <DatePicker fx:id="lastTaughtPicker" layoutX="558.0" layoutY="457.0" prefWidth="300" />
+
+    <!-- Subject Currently Teaching -->
+    <Label layoutX="405.0" layoutY="530.0" styleClass="general-label" text="Subject Teaching:" />
+    <ComboBox fx:id="subjectTeachingComboBox" layoutX="555.0" layoutY="525.0" prefHeight="42.0" prefWidth="300.0">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="Mathematics" />
+                <String fx:value="Science" />
+                <String fx:value="English" />
+                <String fx:value="Hindi" />
+                <String fx:value="Social Studies" />
+                <String fx:value="Computer Science" />
+                <String fx:value="Physical Education" />
+                <String fx:value="Art" />
+                <String fx:value="Music" />
+                <String fx:value="Sanskrit" />
+                <String fx:value="EVS" />
+                <String fx:value="Commerce" />
+                <String fx:value="Economics" />
+                <String fx:value="Accounts" />
+                <String fx:value="Biology" />
+                <String fx:value="Chemistry" />
+                <String fx:value="Physics" />
+            </FXCollections>
+        </items>
+    </ComboBox>
+    <!-- Buttons -->
+    <Button fx:id="saveButton" layoutX="779.0" layoutY="650.0" onAction="#handleSave" prefHeight="44.0" prefWidth="83.0" text="Save" />
+    <Button fx:id="clearButton" layoutX="647.0" layoutY="650.0" onAction="#handleClear" prefHeight="44.0" prefWidth="83.0" text="Clear" />
+   <Button layoutX="511.0" layoutY="650.0" onAction="#handleClose" prefHeight="44.0" prefWidth="83.0" text="Close" />
+   <Label fx:id="errorLabel" alignment="CENTER" contentDisplay="TOP" layoutX="179.0" layoutY="582.0" prefHeight="44.0" prefWidth="988.0" styleClass="general-label" textAlignment="CENTER" wrapText="true">
+      <font>
+         <Font size="15.0" />
+      </font>
+   </Label>
+   <Label layoutX="400.0" layoutY="58.0" styleClass="general-label" text="Admin Code" />
+   <TextField fx:id="adminCodeField" layoutX="559.0" layoutY="47.0" prefHeight="42.0" prefWidth="300.0" styleClass="text-area" />
+
+</AnchorPane>

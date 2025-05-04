@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane accessibleRole="NODE" prefHeight="700" prefWidth="900" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.studentattendanceandmanagementsystem.File_Menu_Controller.User_Guide_Controller">
+
+    <children>
+        <!-- Title -->
+        <Label layoutX="30.0" layoutY="20.0" style="-fx-font-size: 26px; -fx-font-weight: bold; -fx-text-fill: #2E2E2E;" text="Student Attendance MS - User Guide" AnchorPane.leftAnchor="31.0" AnchorPane.topAnchor="20.0">
+            <font>
+                <Font name="System Bold" size="26" />
+            </font>
+        </Label>
+
+        <!-- Sections ComboBox for selecting topics -->
+        <Label layoutX="30.0" layoutY="80.0" styleClass="helpTopics-Getting-started" text="Select Help Topic:" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="80.0" />
+        <ComboBox fx:id="topicComboBox" layoutX="191.0" layoutY="77.0" onAction="#handleTopicSelection" prefWidth="250.0" styleClass="combo-box" AnchorPane.leftAnchor="190.0" AnchorPane.topAnchor="80.0">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="Getting Started" />
+                    <String fx:value="Managing Student Records" />
+                    <String fx:value="Tracking Attendance" />
+                    <String fx:value="Generating Reports" />
+                    <String fx:value="User Account Settings" />
+                    <String fx:value="Troubleshooting and FAQs" />
+                </FXCollections>
+            </items>
+        </ComboBox>
+
+        <!-- Close Button -->
+        <Button layoutX="400.0" layoutY="640.0" onAction="#handleClose" styleClass="Small-Button" text="Close Guide" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0" />
+      <TextArea fx:id="guideContentArea" editable="false" layoutX="22.0" layoutY="128.0" prefHeight="498.0" prefWidth="866.0" styleClass="help-topics-textArea" text="Select a topic from the dropdown to view detailed instructions. Topics include account setup, student management, attendance tracking, report generation, and troubleshooting common issues.Select a topic from the dropdown to view detailed instructions. Topics include account setup, student management, attendance tracking, report generation, and troubleshooting common issues.Select a topic from the dropdown to view detailed instructions. Topics include account setup, student management, attendance tracking, report generation, and troubleshooting common issues.Select a topic from the dropdown to view detailed instructions. Topics include account setup, student management, attendance tracking, report generation, and troubleshooting common issues.Select a topic from the dropdown to view detailed instructions. Topics include account setup, student management, attendance tracking, report generation, and troubleshooting common issues.Select a topic from the dropdown to view detailed instructions. Topics include account setup, student management, attendance tracking, report generation, and troubleshooting common issues.Select a topic from the dropdown to view detailed instructions. Topics include account setup, student management, attendance tracking, report generation, and troubleshooting common issues.Select a topic from the dropdown to view detailed instructions. Topics include account setup, student management, attendance tracking, report generation, and troubleshooting common issues.Select a topic from the dropdown to view detailed instructions. Topics include account setup, student management, attendance tracking, report generation, and troubleshooting common issues.Select a topic from the dropdown to view detailed instructions. Topics include account setup, student management, attendance tracking, report generation, and troubleshooting common issues.Select a topic from the dropdown to view detailed instructions. Topics include account setup, student management, attendance tracking, report generation, and troubleshooting common issues.Select a topic from the dropdown to view detailed instructions. Topics include account setup, student management, attendance tracking, report generation, and troubleshooting common issues.Select a topic from the dropdown to view detailed instructions. Topics include account setup, student management, attendance tracking, report generation, and troubleshooting common issues.Select a topic from the dropdown to view detailed instructions. Topics include account setup, student management, attendance tracking, report generation, and troubleshooting common issues.Select a topic from the dropdown to view detailed instructions. Topics include account setup, student management, attendance tracking, report generation, and troubleshooting common issues.Select a topic from the dropdown to view detailed instructions. Topics include account setup, student management, attendance tracking, report generation, and troubleshooting common issues.Select a topic from the dropdown to view detailed instructions. Topics include account setup, student management, attendance tracking, report generation, and troubleshooting common issues.Select a topic from the dropdown to view detailed instructions. Topics include account setup, student management, attendance tracking, report generation, and troubleshooting common issues.Select a topic from the dropdown to view detailed instructions. Topics include account setup, student management, attendance tracking, report generation, and troubleshooting common issues.Select a topic from the dropdown to view detailed instructions. Topics include account setup, student management, attendance tracking, report generation, and troubleshooting common issues.Select a topic from the dropdown to view detailed instructions. Topics include account setup, student management, attendance tracking, report generation, and troubleshooting common issues.Select a topic from the dropdown to view detailed instructions. Topics include account setup, student management, attendance tracking, report generation, and troubleshooting common issues.Select a topic from the dropdown to view detailed instructions. Topics include account setup, student management, attendance tracking, report generation, and troubleshooting common issues.Select a topic from the dropdown to view detailed instructions. Topics include account setup, student management, attendance tracking, report generation, and troubleshooting common issues.Select a topic from the dropdown to view detailed instructions. Topics include account setup, student management, attendance tracking, report generation, and troubleshooting common issues.Select a topic from the dropdown to view detailed instructions. Topics include account setup, student management, attendance tracking, report generation, and troubleshooting common issues.Select a topic from the dropdown to view detailed instructions. Topics include account setup, student management, attendance tracking, report generation, and troubleshooting common issues.Select a topic from the dropdown to view detailed instructions. Topics include account setup, student management, attendance tracking, report generation, and troubleshooting common issues.Select a topic from the dropdown to view detailed instructions. Topics include account setup, student management, attendance tracking, report generation, and troubleshooting common issues.Select a topic from the dropdown to view detailed instructions. Topics include account setup, student management, attendance tracking, report generation, and troubleshooting common issues." wrapText="true" AnchorPane.bottomAnchor="70.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="130.0" />
+    </children>
+</AnchorPane>

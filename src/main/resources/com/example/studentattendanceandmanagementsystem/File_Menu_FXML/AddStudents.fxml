@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<GridPane fx:id="userForm" accessibleRole="NODE" alignment="CENTER" hgap="10" prefHeight="741.0" prefWidth="828.0" styleClass="anchor-pane" vgap="10" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.studentattendanceandmanagementsystem.File_Menu_Controller.Add_Students_Controller">
+    <padding>
+        <Insets bottom="20" left="20" right="20" top="20" />
+    </padding>
+
+    <!-- First Name -->
+    <Label prefHeight="18.0" prefWidth="142.0" styleClass="general-label" text="First Name:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+    <TextField fx:id="firstNameField" prefHeight="35.0" prefWidth="323.0" promptText="Enter First Name" styleClass="text-area" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+    <!-- Last Name -->
+    <Label styleClass="general-label" text="Last Name:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+    <TextField fx:id="lastNameField" prefHeight="35.0" prefWidth="454.0" promptText="Enter your Last Name" styleClass="text-area" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+    <!-- Full Name (Automatically Combined) -->
+    <Label styleClass="general-label" text="Confirm Password" GridPane.rowIndex="10" />
+    <TextField fx:id="userNameField" prefHeight="35.0" prefWidth="454.0" promptText="Type a Valid UserName" styleClass="text-area" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+
+    <!-- Username -->
+    <Label styleClass="general-label" text="Username:" GridPane.rowIndex="3" />
+
+    <!-- Password -->
+    <Label styleClass="general-label" text="Password:" GridPane.rowIndex="9" />
+    <PasswordField fx:id="confirmPasswordField" prefHeight="32.0" prefWidth="454.0" promptText="Enter password again to confirm" styleClass="text-area" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+
+    <!-- Email -->
+    <Label styleClass="general-label" text="Email:" GridPane.rowIndex="4" />
+    <TextField fx:id="emailField" prefHeight="35.0" prefWidth="463.0" promptText="Type a valid email" styleClass="text-area" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+
+    <!-- Phone Number -->
+    <Label styleClass="general-label" text="Phone Number:" GridPane.rowIndex="5" />
+    <TextField fx:id="phoneNumberField" prefHeight="35.0" prefWidth="463.0" promptText="Mobile number must only be 10 digit long" styleClass="text-area" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+
+    <!-- PAN Number -->
+    <Label styleClass="general-label" text="PAN Number:" GridPane.rowIndex="6" />
+    <TextField fx:id="panNumberField" prefHeight="35.0" prefWidth="463.0" promptText="PAN card must be 10 digit long which contains letter and digits" styleClass="text-area" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+
+    <!-- Aadhar Number -->
+    <Label styleClass="general-label" text="Aadhar Number:" GridPane.rowIndex="7" />
+    <TextField fx:id="aadharNumberField" prefHeight="35.0" prefWidth="463.0" promptText="Type in you 12 digit Aadhar number" styleClass="text-area" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+
+    <!-- Role -->
+    <Label styleClass="general-label" text="Role:" GridPane.rowIndex="8" />
+    <ComboBox fx:id="roleComboBox" prefHeight="26.0" prefWidth="463.0" promptText="Select Role" GridPane.columnIndex="1" GridPane.rowIndex="8">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="Admin" />
+                <String fx:value="Student" />
+                <String fx:value="Teacher" />
+                <String fx:value="Staff" />
+            </FXCollections>
+        </items>
+    </ComboBox>
+
+    <!-- Buttons -->
+    <VBox alignment="CENTER" spacing="10" GridPane.columnSpan="2" GridPane.rowIndex="13">
+        <Text fx:id="errorText" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="general-text" textAlignment="CENTER" wrappingWidth="615.7367057800293" />
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button layoutX="10.0" layoutY="10.0" prefHeight="42.0" prefWidth="292.0" style="-fx-background-color: #120024;" textFill="#2b2020" />
+                <Button fx:id="cancelButton" onAction="#handleCancel" prefHeight="41.0" prefWidth="156.0" styleClass="Small-Button" text="Cancel" />
+              <Button fx:id="submitButton" onAction="#handleSubmit" prefHeight="41.0" prefWidth="177.0" styleClass="Small-Button" text="Submit" />
+         </children>
+      </HBox>
+        <HBox prefHeight="34.0" prefWidth="268.0">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="general-text" text="Already have an Account ?" textAlignment="RIGHT" wrappingWidth="527.1219329833984">
+               <HBox.margin>
+                  <Insets top="5.0" />
+               </HBox.margin></Text>
+            <Hyperlink onAction="#gotoLoginPage" prefHeight="38.0" prefWidth="119.0" styleClass="forget-password" text="Login">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </Hyperlink>
+            </children>
+        </HBox>
+    </VBox>
+    <PasswordField fx:id="passwordField" prefHeight="32.0" prefWidth="454.0" promptText="Enter Password" styleClass="text-area" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+    <Label layoutX="131.0" layoutY="199.0" styleClass="general-label" text="Full Name:" GridPane.rowIndex="2" />
+    <TextField fx:id="showpswdField" prefHeight="31.0" prefWidth="463.0" styleClass="text-area" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+    <TextField fx:id="showcnfpswdField" prefHeight="30.0" prefWidth="463.0" styleClass="text-area" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+    <TextField fx:id="fullNameField" editable="false" layoutX="284.0" layoutY="181.0" prefHeight="35.0" prefWidth="454.0" promptText="Your full Name will be displayed automatically" styleClass="text-area" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+    <Button mnemonicParsing="false" onAction="#checkpswd" prefHeight="27.0" prefWidth="135.0" styleClass="Small-Button" text="Show" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+    <Button mnemonicParsing="false" onAction="#checkcnfpswd" prefHeight="1.0" prefWidth="135.0" styleClass="Small-Button" text="Show" GridPane.columnIndex="2" GridPane.rowIndex="10" />
+       <Label fx:id="classText" layoutX="33.0" layoutY="436.0" styleClass="general-label" text="Class" visible="false" GridPane.rowIndex="12" />
+    <ComboBox fx:id="classComboBox" layoutX="186.0" layoutY="418.0" prefHeight="26.0" prefWidth="463.0" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="12">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="Play School" />
+                <String fx:value="Nursery" />
+                <String fx:value="L.K.G" />
+                <String fx:value="U.K.G" />
+                <String fx:value="Class 1" />
+                <String fx:value="Class 2" />
+                <String fx:value="Class 3" />
+                <String fx:value="Class 4" />
+                <String fx:value="Class 5" />
+                <String fx:value="Class 6" />
+                <String fx:value="Class 7" />
+                <String fx:value="Class 8" />
+                <String fx:value="Class 9" />
+                <String fx:value="Class 10" />
+                <String fx:value="Class 11" />
+                <String fx:value="Class 12" />
+
+            </FXCollections>
+        </items>
+    </ComboBox>
+   <TextField fx:id="adminCodeField" prefHeight="34.0" prefWidth="463.0" promptText="Enter Admin Code" styleClass="text-area" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+   <Label styleClass="general-label" text="Admin Code" GridPane.rowIndex="11" />
+  <columnConstraints>
+        <ColumnConstraints />
+        <ColumnConstraints maxWidth="507.2" minWidth="391.20006103515624" prefWidth="407.20006103515624" />
+        <ColumnConstraints maxWidth="151.1999389648438" minWidth="35.200000000000045" prefWidth="135.1999389648438" />
+    </columnConstraints>
+    <rowConstraints>
+       
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints maxHeight="59.39999999999998" minHeight="31.399999999999977" prefHeight="59.39999999999998" />
+      <RowConstraints maxHeight="59.39999999999998" minHeight="31.399999999999977" prefHeight="59.39999999999998" />
+      <RowConstraints maxHeight="155.39999999999998" minHeight="127.39999999999998" prefHeight="127.39999999999998" />
+    </rowConstraints>
+
+</GridPane>

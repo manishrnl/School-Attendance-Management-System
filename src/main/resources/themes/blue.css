@@ -1,0 +1,188 @@
+/* Blue Theme */
+/* A clean blue-based color palette */
+
+.root {
+    -fx-background-color: #1e3a5f;  /* Deep blue background */
+    -fx-text-fill: #e6f2ff;         /* Light blue-white text */
+}
+
+.anchor-pane {
+    -fx-background-color: #1e3a5f;  /* Deep blue background */
+}
+
+.button, .Small-Button {
+    -fx-background-color: #3498db;  /* Medium blue */
+    -fx-text-fill: #ffffff;         /* White text */
+    -fx-font-weight: bold;
+    -fx-background-radius: 5px;
+}
+
+.button:hover, .Small-Button:hover {
+    -fx-background-color: #2980b9;  /* Darker blue for hover */
+    -fx-cursor: hand;
+}
+
+.combo-box, .menu-button {
+    -fx-background-color: #2c4c7c;  /* Slightly lighter blue */
+    -fx-text-fill: #e6f2ff;         /* Light blue-white text */
+    -fx-border-color: #5d8bb3;      /* Medium-light blue border */
+    -fx-border-radius: 5px;
+}
+
+.combo-box .arrow, .menu-button .arrow {
+    -fx-background-color: #3498db;  /* Medium blue */
+}
+
+.combo-box .list-cell, .menu-button .label {
+    -fx-text-fill: #e6f2ff;         /* Light blue-white text */
+}
+
+.context-menu {
+    -fx-background-color: #2c4c7c;  /* Slightly lighter blue */
+    -fx-border-color: #5d8bb3;      /* Medium-light blue border */
+}
+.forget-password {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: RED;
+}
+.general-label {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+.general-text {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-fill: white;
+}
+.headerText {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1e90ff;
+}
+.menu-item {
+    -fx-background-color: #2c4c7c;  /* Slightly lighter blue */
+}
+
+.menu-item .label {
+    -fx-text-fill: #e6f2ff;         /* Light blue-white text */
+}
+
+.menu-item:focused {
+    -fx-background-color: #3498db;  /* Medium blue */
+}
+
+.menu-item:focused .label {
+    -fx-text-fill: #ffffff;         /* White text */
+}
+
+.table-view {
+    -fx-background-color: #2c4c7c;  /* Slightly lighter blue */
+    -fx-border-color: #5d8bb3;      /* Medium-light blue border */
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #1e3a5f;  /* Deep blue background */
+}
+
+.table-view .column-header, .table-view .filler {
+    -fx-background-color: transparent;
+    -fx-border-color: #5d8bb3;      /* Medium-light blue border */
+    -fx-border-width: 0 0 1 0;
+    -fx-text-fill: #e6f2ff;         /* Light blue-white text */
+}
+
+.table-view .table-cell {
+    -fx-text-fill: #e6f2ff;         /* Light blue-white text */
+}
+
+.table-row-cell {
+    -fx-background-color: #1e3a5f;  /* Deep blue background */
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #2c4c7c;  /* Slightly lighter blue */
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #3498db;  /* Medium blue */
+}
+
+.text-field, .text-area {
+    -fx-background-color: #2c4c7c;  /* Slightly lighter blue */
+    -fx-text-fill: #e6f2ff;         /* Light blue-white text */
+    -fx-border-color: #5d8bb3;      /* Medium-light blue border */
+    -fx-border-radius: 5px;
+}
+
+.general-text {
+    -fx-fill: #e6f2ff;              /* Light blue-white text */
+}
+
+.scroll-bar {
+    -fx-background-color: #1e3a5f;  /* Deep blue background */
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: #5d8bb3;  /* Medium-light blue */
+}
+
+.scroll-bar .thumb:hover {
+    -fx-background-color: #3498db;  /* Medium blue */
+}
+
+/* Main TabPane styling */
+.tab-pane {
+  -fx-background-color: #1e3a5f;    /* Deep blue background */
+  -fx-tab-min-width: 120px;
+  -fx-tab-max-width: 120px;
+}
+
+.tab-pane .tab-header-background {
+  -fx-background-color: #1e3a5f;    /* Deep blue background */
+}
+
+/* Inactive tabs */
+.tab {
+  -fx-background-color: #1e3a5f;    /* Deep blue background */
+  -fx-background-insets: 0 1 0 1, 0, 0;
+  -fx-padding: 5 15 5 15;
+}
+
+.tab .tab-label {
+  -fx-text-fill: #e6f2ff;           /* Light blue-white text */
+  -fx-font-weight: bold;
+}
+
+/* Active (selected) tab */
+.tab:selected {
+  -fx-background-color: #3498db;    /* Medium blue */
+  -fx-focus-color: transparent;
+  -fx-faint-focus-color: transparent;
+}
+
+.tab:selected .tab-label {
+  -fx-text-fill: #ffffff;           /* White text */
+}
+
+/* Hover effect */
+.tab:hover {
+  -fx-background-color: #2980b9;    /* Darker blue for hover */
+}
+
+/* Close button */
+.tab .tab-close-button {
+  -fx-background-color: #e6f2ff;    /* Light blue-white */
+}
+
+.tab .tab-close-button:hover {
+  -fx-background-color: #ffffff;    /* White */
+}
+
+/* Content area */
+.tab-content {
+  -fx-background-color: #1e3a5f;    /* Deep blue background */
+  -fx-padding: 15;
+  -fx-text-fill: #e6f2ff;           /* Light blue-white text */
+}
