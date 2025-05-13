@@ -18,7 +18,7 @@
 
 | Manage Students | Manage Teachers | Mark Attendance |
 |-----------------|-----------------|-----------------|
-| ![Students](Images/School-Manage-students.png) | ![Teachers](Images/School-Manage-Teachers.png) | ![Mark Attendance](Images/School-MarkClass-Attendance.png) |
+| ![Students](Images/School-Manage-Students.png) | ![Teachers](Images/School-Manage-Teachers.png) | ![Mark Attendance](Images/School-MarkClass-Attendance.png) |
 
 | View Attendance | Monthly Report | Overall Report |
 |-----------------|----------------|----------------|
